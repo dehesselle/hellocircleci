@@ -16,7 +16,7 @@ jobs:
       # Replace this with steps to build a package, or executable
       - run:
           name: checkout mibap
-          command: git clone https://github.com/dehesselle/mibap
+          command: git clone --recurse-submodules https://github.com/dehesselle/mibap
       - run:
           name: build it
           command: usr/bin/bootstrap
